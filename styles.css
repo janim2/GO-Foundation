@@ -16,18 +16,31 @@
 .nav-link{
   color: #000;
 }
-
 .V-text{
   width: 300px;
  }
-
 .M-text{
  width: 300px;
 }
+.Home-child-2{
+  display: flex;
+  }
 } 
 
+
+@media (max-width: 575px) {
+  .Home-Image {
+    height: auto;
+  }
+  .Home-child-1 {
+    top: 40%;
+  }
+}
+
+
+
 @media (min-width: 576px) and (max-width: 768px) {
-.Home-child-2{
+.Home-child-3{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +50,7 @@
   height: 250px;
 } 
 
-.Home-child-3{
+.Home-child-4{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +59,15 @@
   gap: 10px ;
   height: 250px;
 } 
+
+.M-text{
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 420px;
+  font-family: 'poppins';
+}
+
 
 }
 
@@ -146,7 +168,35 @@
   padding: 0;
 }
 
-.Home-child-2{
+#About{
+  background-color: rgb(225, 227, 236);
+  gap: 10px;
+}
+
+#About h2{
+text-align: center;
+position: absolute;
+left: 50px;
+padding-top: 20px;
+padding-bottom: 30px;
+}
+
+#About p{
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+.About-image{
+  padding-bottom: 40px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+
+
+
+
+.Home-child-3{
   gap: 15px;
   padding-top: 70px;
   display: flex;
@@ -157,6 +207,7 @@
 
 .V-text{
  padding-left: 20px;
+ font-family: 'poppins';
 }
 
 .V-image{
@@ -165,7 +216,7 @@
   height: 250px;
 }
 
-.Home-child-3{
+.Home-child-4{
   gap: 15px;
   padding-top: 70px;
   display: flex;
