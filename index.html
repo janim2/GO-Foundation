@@ -13,11 +13,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
-  
   <body> 
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
       <div class="container-fluid">
+        <div class="both">
         <a class="navbar-brand" href="#HomePage"><img class="L-Image" src="img/GO LOGO.jpg" alt="Logo" width="30px"></a>
+        <h2>GGF</h2>
+      </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
           <span class="navbar-toggler-icon">
             <div class="line top-line"></div>
@@ -37,12 +40,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="#About">About Us</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item"></li>
                 <a class="nav-link" href="#Team">Team</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Services">Services</a>
               </li>
+              
               <li class="nav-item">
                 <a class="nav-link" href="#Contact">Contact</a>
               </li>
@@ -58,66 +62,177 @@
 
     
     <section id="HomePage">
-      <div class="image-container">
-         <img class="Home-Image" src="img/HomePage 2.jpg" alt="" >
-         <div class="overlay"></div>
-      </div>
 
-      <div class="Home-child-1">
-        <h1>WELCOME TO GO GLOBAL FOUNDATION</h1>
-        <P>Our foundation enhances youth opportunities by advancing STEM education, providing career support, and addressing global challenges like climate change and poverty.</P>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="  carousel-item active">
+            <img src="img/HomePage 2.jpg" class="Home-Image d-block w-100" alt="...">
+            <div class="overlay"></div>
+            <div class="Home-child-1 carousel-caption d-none d-md-block">
+              <h1>WELCOME TO GLOBAL FOUNDATION</h1>
+              <p>Our foundation enhances youth opportunities by advancing STEM education, providing career support, and addressing global challenges like climate change and poverty.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/HomePage 1.jpg" class=" Home-Image d-block w-100" alt="...">
+            <div class="overlay"></div>
+            <div class="Home-child-1 carousel-caption d-none d-md-block">
+              <h1>BEST HOME OF MOTIVATION AND GUIDELINE</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum incidunt omnis, officiis blanditiis architecto sapiente.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/HomePage 3.jpg" class=" Home-Image d-block w-100" alt="...">
+            <div class="overlay"></div>
+            <div class="Home-child-1 carousel-caption d-none d-md-block">
+              <h1>LETS LEAD YOU UP THE LADDER</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates porro voluptas dolorem nemo.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-
+    </section>
       <section id="About">
-      
-         <h2>ABOUT US</h2>
+         <h2><b>ABOUT US</b></h2>
          <div class="Home-child-2">
          <p>Our foundation is dedicated to promoting education and opportunities for young people around the world. Our work is centered around three main focus areas: STEM education, career development and global issues solving. 
        <br>
-       
-      Our STEM education initiative is designed to inspire and engage young people in the fields of science, technology, engineering, and mathematics. We believe that these fields are critical to solving many of the world's most pressing problems. As a foundation, we strive to connect the lessons taught in classrooms to the vast realm of life outside. We seek to enrich students' educational experiences by showcasing real-life applications of the theories they learn.
-<br>
-         Our career development initiative enlightens young people through workshops, mentorship programs, and exposure to various career paths, empowering these young minds to make informed decisions about their professional journeys. We recognize that finding the right career path can be challenging, and we are committed to providing mentorship programs to job fairs, offering a range of services to encourage young people in achieving their career goals.
-         <br>
-         Finally, our global issues solving initiative is focused on addressing some of the world's most pressing problems. From climate change to poverty to human rights violations, there are many complex issues facing our world today especially the UN Sustainable development goals. We believe that young people have an important role to play in solving these problems, and empower them to make positive change and a difference in their environment.
+      Our STEM education initiative is designed to inspire and engage young people in the fields of science, technology, engineering, and mathematics. We believe that these fields are critical to solving many of the world's most pressing problems. <br> As a foundation, we strive to connect the lessons taught in classrooms to the vast realm of life outside. We seek to enrich students' educational experiences by showcasing real-life applications of the theories they learn.
        <br>
-         We are proud to focus our efforts on these three main areas at GO Global Foundation. We believe that we have the potential to make a real difference in the lives of young people around the world.</p>
-        <!-- <div class="About-image">
-         <img src="img/about.jpg" alt="" width="600px">
-        </div> -->
+         Finally, our global issues solving initiative is focused on addressing some of the world's most pressing problems. From climate change to poverty to human rights violations, there are many complex issues facing our world today especially the UN Sustainable development goals. <br> We believe that young people have an important role to play in solving these problems, and empower them to make positive change and a difference in their environment.
+       <br>
+         We are proud to focus our efforts on these three main areas at GO Global Foundation. We believe that we have the potential to make a real difference in the lives of young people around the world.
+        <br>
+        By fostering innovation, leadership, and a sense of responsibility, we equip the next generation with the skills and confidence they need to tackle the challenges of today and shape a brighter, more sustainable tomorrow.
+      </p>
         </div>
        </section>
-       
 
+
+       <Section id="Team">
+        <h2><b>OUR ABLE TEAM</b></h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="/img/GO DIRECTOR OF OPER.jpg" class="card-img-top" alt="...">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="/img/GO SECRETARY.jpg" class="card-img-top" alt="...">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/GO PROTOCOL MANAGER.jpg" class="card-img-top mobile" alt="...">
+            </div>
+          </div> 
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="/img/GO PLANING.jpg" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/img/GO MEDIA HEAD.jpg" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/img/GO IT HEAD.jpg" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/img/GO IT ASSISTANT.jpg" class="card-img-top" alt="...">
+              </div>
+            </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/img/GO GLOBAL.jpg" class="card-img-top" alt="...">
+            </div>
+          </div>
+        </div>
+      </Section>
 
       <div class="Home-child-3">
          <div class="V-text">
-          <h2><b>OUR VISION:</b></h2>
+          <h2><b>OUR VISION</b></h2>
           <p> Inspiring and awakening the transformation of lives.</p>
          </div>
          <div class="V-image">
-          <img src="img/GO VISSION.jpg" alt="" width="450px">
+          <img src="img/GO VISSION.jpg" alt="" width="400px">
          </div>
       </div>
 
       <div class="Home-child-4">
         <div class="M-image">
-          <img src="img/GO MISSION.jpg" alt="" width="450px" >
+          <img src="img/GO MISSION.jpg" alt="" width="400px" >
          </div>
         <div class="M-text">
-        <h2><b>OUR MISSION:</b></h2>
+        <h2><b>OUR MISSION</b></h2>
         <p>To inspire communities by influencing, educating and improving our environment with positive change and value.</p>
         </div>
         
       </div>
 
+    
+
+    <section id="Services">
+      <h2><b>SERVICES</b></h2>
+      <div class="row">
+        <div class="card col-lg-3 col-md-4 col-sm-6 text-bg-light mb-4">
+          <div class="card-body" >
+            <h4 class="card-title">Workshops and Mentorship</h4>
+            <p class="card-text">Our career development initiative enlightens young people through workshops, mentorship programs, and exposure to various career paths, empowering these young minds to make informed decisions about their professional journeys.</p>
+          </div>
+        </div>
+        
+        <div class="card col-lg-3 col-md-4 col-sm-6 text-bg-light mb-4">
+          <div class="card-body">
+            <h4 class="card-title">Support for Career Decisions</h4>
+            <p class="card-text">We recognize that finding the right career path can be challenging, and we are committed to providing mentorship programs to job fairs, offering a range of services to encourage young people in achieving their career goals.</p>
+          </div>
+        </div>
+        
+        <div class="card col-lg-3 col-md-4 col-sm-6 text-bg-light mb-4">
+          <div class="card-body">
+            <h4 class="card-title">Bridging Education and Workforce</h4>
+            <p class="card-text">By bridging the gap between education and the workforce, we aim to equip youth with the tools, connections, and confidence they need to thrive in a rapidly evolving job market.</p>
+          </div>
+        </div>
+        
+        <div class="card col-lg-3 col-md-4 col-sm-6 text-bg-light mb-4">
+          <div class="card-body">
+            <h4 class="card-title">Inspiring Resilience and Adaptability</h4>
+            <p class="card-text">Ultimately, we strive to inspire resilience and adaptability, helping them turn their ambitions into achievable realities. We aim to prepare them for both challenges and opportunities in their future careers.</p>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-
-
-
-
+    
+      <section id="Contact">
+        <div class="contact">
+          <h1>Get In Touch</h1>
+          <h4>Contact</h4>
+        </div>
+      </section>
 
 
 
