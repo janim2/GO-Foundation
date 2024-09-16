@@ -35,7 +35,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#HomePage">HomePage</a>
+                <a class="nav-link" aria-current="page" href="#HomePage">HomePage</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#About">About Us</a>
@@ -44,12 +44,16 @@
                 <a class="nav-link" href="#Team">Team</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#Achievements">Achievements</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#Services">Services</a>
               </li>
               
               <li class="nav-item">
                 <a class="nav-link" href="#Contact">Contact</a>
               </li>
+              
               <li class="nav-item">
                 <a class="nav-link" href="#FAQ">FAQ</a>
               </li>
@@ -125,15 +129,15 @@
        <Section id="Team">
         <h2><b>OUR ABLE TEAM</b></h2>
         <div class="row row-cols-1 row-cols-md-4 g-4">
-          <div class="col">
+          <div class="col"">
             <div class="card h-100">
-              <img src="/img/GO DIRECTOR OF OPER.jpg" class="card-img-top" alt="...">
+              <img src="img/GO DIRECTOR OF OPER.jpg" class="card-img-top" alt="...">
             </div>
           </div>
 
           <div class="col">
             <div class="card h-100">
-              <img src="/img/GO SECRETARY.jpg" class="card-img-top" alt="...">
+              <img src="img/GO SECRETARY.jpg" class="card-img-top" alt="...">
             </div>
           </div>
 
@@ -145,54 +149,86 @@
 
           <div class="col">
             <div class="card h-100">
-              <img src="/img/GO PLANING.jpg" class="card-img-top" alt="...">
+              <img src="img/GO PLANING.jpg" class="card-img-top" alt="...">
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="/img/GO MEDIA HEAD.jpg" class="card-img-top" alt="...">
+              <img src="img/GO MEDIA HEAD.jpg" class="card-img-top" alt="...">
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="/img/GO IT HEAD.jpg" class="card-img-top" alt="...">
+              <img src="img/GO IT HEAD.jpg" class="card-img-top" alt="...">
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="/img/GO IT ASSISTANT.jpg" class="card-img-top" alt="...">
+              <img src="img/GO IT ASSISTANT.jpg" class="card-img-top" alt="...">
               </div>
             </div>
           <div class="col">
             <div class="card h-100">
-              <img src="/img/GO GLOBAL.jpg" class="card-img-top" alt="...">
+              <img src="img/GO GLOBAL.jpg" class="card-img-top" alt="...">
             </div>
           </div>
         </div>
       </Section>
 
-      <div class="Home-child-3">
-         <div class="V-text">
-          <h2><b>OUR VISION</b></h2>
-          <p> Inspiring and awakening the transformation of lives.</p>
-         </div>
-         <div class="V-image">
-          <img src="img/GO VISSION.jpg" alt="" width="400px">
-         </div>
-      </div>
 
-      <div class="Home-child-4">
-        <div class="M-image">
-          <img src="img/GO MISSION.jpg" alt="" width="400px" >
-         </div>
-        <div class="M-text">
-        <h2><b>OUR MISSION</b></h2>
-        <p>To inspire communities by influencing, educating and improving our environment with positive change and value.</p>
+      <section class="achievements" id="Achievements">
+        <div class="container">
+          <h2 class="section-title">Achievements in Numbers</h2>
+          <p class="section-description">Oh yes! we have really come too far, was not easy at first but God has helped us impact on a great number of lives. Students are benefiting the most from the events we hold here and there, take a look at our achievements in numbers:</p>
+      
+          <div class="achievement-numbers">
+            <div class="achievement-item">
+              <h3>?+</h3>
+              <p>Years of start</p>
+            </div>
+            <div class="achievement-item">
+              <h3>?+</h3>
+              <p>Impacted Students</p>
+            </div>
+            <div class="achievement-item">
+              <h3>?+</h3>
+              <p>Events</p>
+            </div>
+            <div class="achievement-item">
+              <h3>?+</h3>
+              <p>Funds Raised</p>
+            </div>
+          </div>
         </div>
-        
-      </div>
+      </section>
 
-    
+
+      <section id="Mission-Vision">   
+        <div class="container">
+          <!-- First Row (Our Mission) -->
+          <div class="row align-items-center mb-4">
+            <div class="col-12 col-md-6 text-section">
+              <h2><b>Our Vision</b></h2>
+              <p>Inspiring and awakening the transformation of lives.</p>
+            </div>
+            <div class="col-12 col-md-6 image-section">
+              <img src="img/GO VISSION.jpg" alt="Child 1" class="img-fluid w-100">
+            </div>
+          </div>
+          
+          <!-- Second Row (Our Vision) -->
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 image-section">
+              <img src="img/GO MISSION.jpg" alt="Child 2" class="img-fluid w-100">
+            </div>
+            <div class="col-12 col-md-6 text-section">
+              <h2><b>Our Mission</b></h2>
+              <p>To inspire communities by influencing, educating and improving our environment with positive change and value.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
     <section id="Services">
       <h2><b>SERVICES</b></h2>
@@ -229,10 +265,33 @@
 
     <!-- Continue tomorrow God willing -->
       <section id="Contact">
-        <div class="contact">
-          <h1>Get In Touch</h1>
-          <h4>Contact</h4>
-        </div>
+        <section class="contact">
+          <h2>Contact Us</h2>
+          <p>Get in touch with us:</p>
+          <ul>
+            <li>
+              <span>Phone:</span>
+              <span>+233 2481777732</span>
+            </li>
+            <li>
+              <span>Email:</span>
+              <span>godsownglobalfoundation@gmail.com</span>
+            </li>
+            <li>
+              <span>Instagram:</span>
+              <span>go_Global Foundation</span>
+            </li>
+            <li>
+              <span>Facebook:</span>
+              <span>gGO Global Foundation</span>
+            </li>
+            <li>
+              <span>Address:</span>
+              <span>Ashanti Region Kumasi-Ghana</span>
+            </li>
+          </ul>
+        </section>
+        
       </section>
 
 
