@@ -71,8 +71,7 @@
 
     
     <section id="HomePage">
-<!--  -->
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" >
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" >
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -97,11 +96,16 @@
             </div>
           </div>
           <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
             <img src="img/HomePage 3.jpg" class=" Home-Image d-block w-100" alt="...">
+          </div>
+          <div class="col-md-6">
             <div class="overlay"></div>
             <div class="Home-child-1 carousel-caption d-block">
               <h1>LETS LEAD YOU UP THE LADDER</h1>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates porro voluptas dolorem nemo.</p>
+            </div>
             </div>
           </div>
         </div>
@@ -115,6 +119,7 @@
         </button>
       </div>
     </section>
+
       <section id="About">
          <h2><b>ABOUT US</b></h2>
          <div class="Home-child-2">
@@ -298,11 +303,86 @@
             </li>
           </ul>
         </section>
-        
       </section>
 
-      <!-- <div class="faq-container">
-        <!-- FAQ content goes here -->
+      <section id="FAQ"></section>
+      <section id="faq" class="faq-section py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+          <div class="accordion" id="faqAccordion">
+            
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeading1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                  What is the main focus of GO Global Foundation?
+                </button>
+              </h2>
+              <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Our foundation focuses on three main areas: STEM education, career development, and solving global issues like climate change, poverty, and human rights violations, particularly aligning with the UN Sustainable Development Goals.
+                </div>
+              </div>
+            </div>
+      
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                  How does GO Global Foundation support STEM education?
+                </button>
+              </h2>
+              <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We inspire and engage young people in science, technology, engineering, and mathematics by connecting classroom lessons to real-world applications, showing students how these fields solve important global problems..
+                </div>
+              </div>
+            </div>
+      
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                  How can young people get involved in solving global issues?
+                </button>
+              </h2>
+              <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We believe young people have an important role in solving global problems like climate change, poverty, and human rights violations. Our programs empower youth to make positive changes in their communities and beyond..
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                  How do I become a Sponsor?
+                </button>
+              </h2>
+              <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can sponsor us by reaching out by sending us a message via email.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                  How can I support or make a donation to GO Global Foundation?
+                </button>
+              </h2>
+              <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Donate or suppor Go Global Foundation by calling any of our contacts in the contact section. You can also get to us through email and other social media handles.
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      
       </div>
       
       

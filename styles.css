@@ -86,7 +86,7 @@
 }
 
 .nav-link:hover{
-  color: blue;
+  color: #007bff;
 }
 
 .both{
@@ -403,6 +403,60 @@ body {
   vertical-align: middle;
 }
 
+/* FAQ Section Styles */
+.faq-section {
+  background-color: #f9f9f9; /* Light background color for contrast */
+  color: #333; /* Text color */
+}
+
+.faq-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.accordion-button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover, .accordion-button:not(.collapsed) {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.accordion-body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  background-color: #fff;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 10px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .faq-section h2 {
+    font-size: 2rem;
+  }
+  
+  .accordion-button {
+    font-size: 1rem;
+  }
+}
 
 
 
