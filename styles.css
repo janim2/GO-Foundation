@@ -16,19 +16,18 @@
 .nav-link{
   color: #000;
 }
-
 } 
 
 /* For small devices (phones) */
 @media (max-width: 575px) {
   .Home-child-1 {
-    width: 90%; /* Give it more width */
-    max-width: 400px; /* Ensure it doesn't stretch too wide */
+    width: 90%; 
+    max-width: 400px; 
     position: absolute;
-    top: 40%; /* Push the text up */
+    top: 40%; 
     left: 50%; 
-    transform: translate(-50%, -40%); /* Adjust centering */
-    padding: 10px; /* Add padding to prevent cramped text */
+    transform: translate(-50%, -40%); 
+    padding: 10px; 
   }
   footer{
     font-size: larger;
@@ -38,20 +37,23 @@
 /* For tablets */
 @media (min-width: 576px) and (max-width: 768px) {
   .Home-child-1 {
-    width: 80%; /* Increase width slightly for tablets */
+    width: 80%; 
     max-width: 500px;
     position: absolute;
-    top: 35%; /* Push the text up a bit more */
+    top: 35%; 
     left: 50%;
     transform: translate(-50%, -35%);
-    padding: 15px; /* Add some padding */
+    padding: 15px; 
+  }
+  .Mission{
+    padding-top: 20px;
   }
 }
 
 /* For desktops and larger screens */
 @media (min-width: 769px) {
   .Home-child-1 {
-    width: 60%; /* Adjust the width */
+    width: 60%; 
     max-width: 600px; 
     top: 50%; 
     left: 50%; 
@@ -183,7 +185,6 @@
   text-align: center; 
   z-index: 1; 
   padding: 30px; 
-  
 } 
 
 .Home-child-1 h3 {
@@ -246,8 +247,6 @@ font-size: 40px;
   .card {
     margin-bottom:1px;
   }
-  
-
 }
 
 @media (max-width: 576px) {
@@ -259,9 +258,11 @@ font-size: 40px;
   #Team h2 {
     font-size: 1.2rem;
   }
+
+  .Mission{
+    padding-top: 20px;
+  }
 }
-
-
 
  #Mission-Vision {
   font-family: 'inter';
@@ -286,6 +287,7 @@ font-size: 40px;
   width: 100%;
   height: auto;
 }
+
 
 @media (max-width: 768px) {
   #Mission-Vision .text-section {
@@ -315,10 +317,15 @@ body {
 }
 
 .achievements {
-  background-color: #1e1e1e; /* Dark background */
-  color: white; /* White text */
-  padding: 50px 0;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 100px 0;
+  margin-top: 60px;
   text-align: center;
+}
+
+.achievements h1{
+  padding-bottom: 20px;
 }
 
 .section-title {
@@ -368,34 +375,46 @@ body {
   }
 }
 
-.contact {
-  background-color: #f7f7f7;
-  padding: 20px;
-  border: 1px light #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  
-  
+/* Contact section styling */
+#contact {
+  max-width: 800px;
+  align-items: center;
 }
 
 .contact h1 {
-  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
+.Contact{
+  padding-top: 60px;
+  text-align: center;
+}
 .contact ul {
   list-style: none;
-  padding: 0;
+  padding-bottom: 60px;
   margin: 0;
 }
 
 .contact li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.fab-link{
+  text-decoration: none;
 }
 
 .contact i {
-  margin-right: 10px;
-  color: #666;
+  margin-right: 15px;
+  color: #007bff; 
+  font-size: 1.3rem;
 }
 
 .contact span {
@@ -403,10 +422,42 @@ body {
   vertical-align: middle;
 }
 
+.contact span:nth-child(2) {
+  font-weight: bold; 
+  color: #007bff;
+}
+
+.contact li span:first-child {
+  font-weight: 600;
+  margin-right: 10px;
+  color: #666; 
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contact h1 {
+    font-size: 2rem;
+  }
+
+  .contact li {
+    flex-direction: column; 
+    text-align: left;
+    justify-content: flex-start; 
+  }
+
+  .contact li span:nth-child(2) {
+    margin-top: 5px;
+  }
+} 
+
+
 /* FAQ Section Styles */
 .faq-section {
-  background-color: #f9f9f9; /* Light background color for contrast */
-  color: #333; /* Text color */
+  background-color: #f9f9f9; 
+  color: #333; 
 }
 
 .faq-section h2 {
@@ -457,17 +508,6 @@ body {
     font-size: 1rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 footer{
 
