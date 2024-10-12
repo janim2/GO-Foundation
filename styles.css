@@ -239,6 +239,14 @@ font-size: 40px;
   height: auto;
 }
 
+.card-title-blue {
+  color: #007bff;
+}
+
+.justified-text {
+  text-align: justify;
+}
+
 @media (max-width: 768px) {
   .card-img-top {
     height: auto;
