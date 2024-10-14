@@ -90,7 +90,7 @@
           <div class="carousel-item active">
             <div class="row">
               <div class="col-md-12">
-            <img src="img/HomePage 2.jpg" class="Home-Image d-block w-100" alt="...">
+            <img src="img/slide1.jpeg" class="Home-Image d-block w-100" alt="...">
           </div>
           <div class="col-md-12">
             <div class="overlay"></div>
@@ -105,7 +105,7 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col-md-12">
-            <img src="img/HomePage 1.jpg" class=" Home-Image d-block w-100" alt="...">
+            <img src="img/slide2.jpeg" class=" Home-Image d-block w-100" alt="...">
           </div>
           <div class="col-md-12">
             <div class="overlay"></div>
@@ -162,7 +162,7 @@
 
        <Section id="Team">
         <h2><b>OUR ABLE TEAM</b></h2>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div class="col">
             <div class="card h-100">
               <img src="img/timothy.jpeg" class="card-img-top" alt="Director of Operations">
@@ -225,8 +225,6 @@
             </div>
           </div>
 
-         
-
           <div class="col">
             <div class="card h-100">
               <img src="img/raymond.jpeg" class="card-img-top" alt="Global Relations Manager">
@@ -257,19 +255,19 @@
       
           <div class="achievement-numbers">
             <div class="achievement-item">
-              <h3>?+</h3>
+              <h3>2+</h3>
               <p>Years of start</p>
             </div>
             <div class="achievement-item">
-              <h3>?+</h3>
+              <h3>2500+</h3>
               <p>Impacted Students</p>
             </div>
             <div class="achievement-item">
-              <h3>?+</h3>
-              <p>Events</p>
+              <h3>11+</h3>
+              <p>Projects</p>
             </div>
             <div class="achievement-item">
-              <h3>?+</h3>
+              <h3>4000+</h3>
               <p>Funds Raised</p>
             </div>
           </div>
@@ -336,6 +334,78 @@
         </div>
       </div>
     </section>
+
+    <!-- New "Meet the Board" Section -->
+    <section id="Board" class="text-center">
+      <div class="container">
+        <h2 class="mb-4"><b>MEET THE BOARD</b></h2>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/founder - benjamina.jpg" class="card-img-top" alt="Director of Operations">
+              <div class="card-body">
+                <h5 class="card-title">Benjamina Boamponsem</h5>
+                <p class="card-text">Founder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              
+              <img src="img/founder - boafo.jpg" class="card-img-top" alt="Secretary">
+              <div class="card-body">
+                <h5 class="card-title">Emmanuel Boafo</h5>
+                <p class="card-text">Chief Operations Officer</p>
+              </div>
+            </div>
+          </div>
+
+         
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/founder - enya.jpg" class="card-img-top mobile" alt="Protocol Manager">
+              <div class="card-body">
+                <h5 class="card-title">Dr. Enya Xemalordzo</h5>
+                <p class="card-text">Patron</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+       
+      </div>
+    </section>
+
+    <!-- New Gallery Section -->
+    <section id="Gallery">
+      <div class="gallery-wrapper">
+        <h2><b>GALLERY</b></h2>
+        <div class="gallery-container">
+          <img src="img/ga1.jpeg" alt="Gallery Image 1" onclick="expandImage(this)">
+          <img src="img/ga2.jpeg" alt="Gallery Image 2" onclick="expandImage(this)">
+          <img src="img/ga3.jpeg" alt="Gallery Image 3" onclick="expandImage(this)">
+          <img src="img/ga4.jpeg" alt="Gallery Image 4" onclick="expandImage(this)">
+          <img src="img/ga5.jpeg" alt="Gallery Image 5" onclick="expandImage(this)">
+          <img src="img/ga6.jpeg" alt="Gallery Image 6" onclick="expandImage(this)">
+          <img src="img/ga7.jpeg" alt="Gallery Image 7" onclick="expandImage(this)">
+          <img src="img/ga8.jpeg" alt="Gallery Image 8" onclick="expandImage(this)">
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for expanded image -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="expandedImage">
+        <a href="https://www.facebook.com/YourFacebookPage" target="_blank" class="facebook-link">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </div>
 
     <!-- Contact Section -->
     <section id="Contact">
@@ -453,5 +523,27 @@
       <p>GO GLOBAL FOUNDATION, copyright &copy; 2024 </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- Add this script for image expansion -->
+    <script>
+      function expandImage(img) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("expandedImage");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      }
+
+      function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+
+      // Close the modal when clicking outside the image
+      window.onclick = function(event) {
+        var modal = document.getElementById("imageModal");
+        if (event.target == modal) {
+          closeModal();
+        }
+      }
+    </script>
   </body>
 </html>
